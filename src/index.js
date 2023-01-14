@@ -9,3 +9,5 @@ app.use(routes);
 app.listen(9901, () => {
   console.log("Server is running on port 9901");
 });
+
+module.exports = app;
