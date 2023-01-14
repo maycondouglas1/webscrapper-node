@@ -24,7 +24,8 @@ module.exports = {
             return priceA - priceB;
           });
 
-        return products.map((product) => {
+        return products.map((product, index) => {
+          const id = index + 1;
           const name = product.querySelector(".title").innerText;
           const price = product.querySelector(".price").innerText;
           const description = product.querySelector(".description").innerText;
@@ -36,6 +37,7 @@ module.exports = {
           ).length;
 
           return {
+            id,
             name,
             price,
             description,
