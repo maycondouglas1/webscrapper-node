@@ -28,7 +28,7 @@ module.exports = {
           const name = product.querySelector(".title").innerText;
           const price = product.querySelector(".price").innerText;
           const description = product.querySelector(".description").innerText;
-          const review = product.querySelector(
+          const reviews = product.querySelector(
             ".ratings .pull-right"
           ).innerText;
           const rating = product.querySelectorAll(
@@ -39,7 +39,7 @@ module.exports = {
             name,
             price,
             description,
-            review,
+            reviews,
             rating: `${rating} stars`,
           };
         });
